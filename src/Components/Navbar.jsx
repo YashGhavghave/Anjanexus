@@ -1,22 +1,28 @@
 import React from 'react'
+import Image from '../assets/Logo.png'
 
 function Navbar() {
   return (
     <div>
-      <div className='h-[10vh] w-[100%] bg-black opacity-85 flex border-b-white'>
-        <div>
-            <div id='logo' className='h-[10vh] w-[30vw] flex text-white text-3xl justify-evenly items-center'>AnjaNexus</div>
-        </div>
-        <div className="h-full w-[70vw] flex justify-evenly text-white items-center ">
-
-        <div className="">Home</div>
-        <div className="">Service</div>
-        <div className="">Project</div>
-        <div className="">Contact Us</div>
-        </div>
-      </div>
-
+  <div
+    id="Glow"
+    className="h-[10vh] w-full bg-transparent bg-opacity-30 backdrop-blur-lg flex border-b-2 fixed top-0 "
+  >
+    <div
+      id="logo"
+      className="flex items-center justify-center h-20 w-65 text-white text-3xl relative left-[6vw] top-2 "
+    >
+      <img src={Image} alt="Company Logo" className="flex" />
     </div>
+    <div className="h-full relative left-[9vw] pl-[18vw] w-[80vw] flex justify-evenly text-white items-center">
+      <div className="text-lg cursor-pointer hover:text-gray-300">Home</div>
+      <div className="text-lg cursor-pointer hover:text-gray-300">Service</div>
+      <div className="text-lg cursor-pointer hover:text-gray-300">Project</div>
+      <div className="text-lg cursor-pointer hover:text-gray-300">Contact Us</div>
+    </div>
+  </div>
+</div>
+
   )
 }
 
