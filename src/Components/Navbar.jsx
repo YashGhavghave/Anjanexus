@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div
       id="Glow"
-      className="fixed top-0 left-0 z-50 h-[10vh] w-full bg-transparent backdrop-blur-md border-b border-white/10 flex"
+      className="absolute top-0 left-0 z-50 h-[10vh] w-full bg-black bg-opacity-50 backdrop-blur-md border-b border-white/10 flex"
     >
       <div
         id="logo"
