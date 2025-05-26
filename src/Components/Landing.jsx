@@ -1,17 +1,26 @@
 import React from "react";
-import LandingVDO from '../assets/Landingvideo.mp4'
-import Container_one from "./Landing/Container_one";
 
 const LandingPage = () => {
   return (
-  <>
-  <div className="h-screen w-full flex items-center justify-evenly relative border-r-red-600 bg-[url(https://cdn.pixabay.com/photo/2025/04/30/05/57/bay-9568512_1280.jpg)] bg-fixed  bg-cover bg-no-repeat contrast-100">
-    <div className=" top-0 left-0 z-50 h-[40vh] w-[60vw] bg-transparent bg-opacity-50 backdrop-blur-md border-b border-white/10 flex items-center justify-evenly">
+    <div className="h-screen w-full bg-[url('https://cdn.pixabay.com/photo/2025/04/30/05/57/bay-9568512_1280.jpg')] bg-cover bg-no-repeat bg-fixed relative">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-10"></div>
 
-    <h1 className="flex justify-evenly text-5xl relative text-white ">Welcome to AnjaNexus <br/></h1>
+      {/* Content */}
+      <div className="relative z-20 h-full flex items-center justify-center px-4">
+        <div className="bg-black bg-opacity-70 rounded-2xl shadow-lg p-8 sm:p-12 w-full max-w-2xl text-center">
+          <h1 className="text-white text-4xl sm:text-5xl font-bold mb-6">
+            Welcome to <span className="text-blue-400">AnjaNexus</span>
+          </h1>
+          <p className="text-gray-300 text-lg mb-6">
+            Where Innovation Meets Design & Development.
+          </p>
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition">
+            Get Started
+          </button>
+        </div>
+      </div>
     </div>
- </div>
-  </>
   );
 };
 
