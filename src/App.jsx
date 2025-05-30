@@ -20,7 +20,7 @@ function App() {
       {/* Main content */}
       <div className="pt-[0vh]"> {/* Offset for fixed navbar */}
         <div ref={homeRef}>
-          <Landing contactRef={contactRef} /> {/* ← Pass contactRef here */}
+          <Landing contactRef={servicesRef} /> {/* ← Pass contactRef here */}
         </div>
         <div ref={servicesRef}>
           <ServicesPage />
