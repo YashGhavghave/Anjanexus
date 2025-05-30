@@ -1,6 +1,10 @@
 import React from "react";
 
-const LandingPage = () => {
+const LandingPage = ({ contactRef }) => {
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="h-screen w-full bg-[url('https://cdn.pixabay.com/photo/2025/04/30/05/57/bay-9568512_1280.jpg')] bg-cover bg-no-repeat bg-fixed relative">
       {/* Overlay */}
@@ -15,7 +19,10 @@ const LandingPage = () => {
           <p className="text-gray-300 text-lg mb-6">
             Where Innovation Meets Design & Development.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition">
+          <button
+            onClick={scrollToContact}
+            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition"
+          >
             Get Started
           </button>
         </div>
